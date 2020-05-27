@@ -1,7 +1,12 @@
-# RaMu - Discord Bot
+<h1 align=center>
+    <br/>
+    <img src="img\IMG-20200219-WA0033.jpg">
+    <br/>
+    RaMu - Discord Bot
+</h1>
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-[![HitCount](http://hits.dwyl.com/cannibalcheeseburger/automation-cli.svg)](http://hits.dwyl.com/cannibalcheeseburger/automation-cli)
+[![HitCount](http://hits.dwyl.com/cannibalcheeseburger/Ramu-Discord-bot.svg)](http://hits.dwyl.com/cannibalcheeseburger/Ramu-Discord-bot)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Made](https://img.shields.io/badge/Made%20With-Python%203.7-green.svg?style=for-the-badge")](https://www.python.org/downloads/)
 [![Discord.py](https://img.shields.io/badge/discord-py-blue.svg)](https://github.com/Rapptz/discord.py/)
