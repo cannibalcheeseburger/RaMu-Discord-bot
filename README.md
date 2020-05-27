@@ -12,7 +12,7 @@
 [![Discord.py](https://img.shields.io/badge/discord-py-blue.svg)](https://github.com/Rapptz/discord.py/)
 
 
-This repo consists of code put into making RaMu (RanginMuthail). RaMu does some very random and useless tasks. Procede with caution.
+This repo consists of code put into making RaMu (RanginMuthail). RaMu does some very random and useless tasks.Procede with caution.
 
 Link to invite RaMu to your Discord Server: [RaMu](https://discord.com/api/oauth2/authorize?client_id=715204457754787952&permissions=8&scope=bot)
 
@@ -61,3 +61,5 @@ example of --help
 Type --help command for more info on a command.
 You can also type --help category for more info on a category.
  ```
+
+ ![Screenshot](img\screen.png)
