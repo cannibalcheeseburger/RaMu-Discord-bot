@@ -43,6 +43,20 @@ python -m pip install -r requirements.txt
 python bot.py
 ```
 
+__Note__: For obvious reasons TOKEN for bot saved in separate file has not been uploaded. So bot won't work on your machine . 
+
+If you just want it to make your own bot, then replace `creds.TOKEN in:
+```python
+client.run(creds.TOKEN)
+```
+at the end of file `bot.py`.
+
+And remove the line:
+
+```python 
+import creds
+```
+
 ## Usage 
 
  - Add the bot to your Discord Server : [RaMu](https://discord.com/api/oauth2/authorize?client_id=715204457754787952&permissions=8&scope=bot)
