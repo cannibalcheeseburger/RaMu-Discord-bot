@@ -1,6 +1,6 @@
 <h1 align=center>
     <br/>
-    <img src="img\IMG-20200219-WA0033.jpg">
+    <img src=".\img\IMG-20200219-WA0033.jpg">
     <br/>
     RaMu - Discord Bot
 </h1>
@@ -62,4 +62,4 @@ Type --help command for more info on a command.
 You can also type --help category for more info on a category.
  ```
 
- ![Screenshot](img\screen.png)
+ ![Screenshot](./img/screen.png)
