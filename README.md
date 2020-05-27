@@ -19,7 +19,7 @@ Link to invite RaMu to your Discord Server: [RaMu](https://discord.com/api/oauth
 ## Installation
 
 ### Python
-Bot is written in python 3.7.6 [Python](https://www.python.org/downloads/)
+Bot is written in [Python 3.7.6](https://www.python.org/downloads/)
  
 ### Build from source
 
