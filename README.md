@@ -42,3 +42,22 @@ python -m pip install -r requirements.txt
 ```
 python bot.py
 ```
+
+## Usage 
+
+ - Add the bot to your Discord Server : [RaMu](https://discord.com/api/oauth2/authorize?client_id=715204457754787952&permissions=8&scope=bot)
+ 
+ - Type  `--help` on the text channel.
+
+example of --help
+ ```
+ ​No Category:
+  --8ball Return a response to the question
+  --clear  Clears x number of messages
+  --help   Shows this message
+  --oobhai Returns maro mujhe maro x number of times
+  --ping   Returns Ping
+
+Type --help command for more info on a command.
+You can also type --help category for more info on a category.
+ ```
