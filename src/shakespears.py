@@ -14,6 +14,8 @@ def shake(query):
 
     response = requests.request("GET", url, headers=headers, params=querystring)
     data = response.json()
-    if data['error']:
+    try:
+        return(data['contents']['translated'])
+        
+    except KeyError: 
         return(data['error']['message'])
-    return(data['contents']['translated'])
