@@ -1,7 +1,6 @@
 import discord
 from discord.ext import commands
 import random
-import creds
 from const import responses
 from src import recipe as rc
 import os
