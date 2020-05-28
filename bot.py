@@ -4,6 +4,7 @@ import random
 from const import responses
 from src import recipe as rc
 from src import shakespears as sh
+from src import fortune as ft
 import os
 
 client = commands.Bot(command_prefix='--')
@@ -60,6 +61,11 @@ async def clear(ctx,amount = 5):
 @client.command(help="Return shakespears translation",description="Return shakespears translation")
 async def shakespears(ctx,*,query):
     await ctx.send(sh.shake(query))
+
+## FORTUNE
+@client.command(help="Fortune Cookie",description="Fortune Cookie")
+async def fortune(ctx):
+    await ctx.send(ft.fortune())
 
 
 client.run(str(os.environ.get("TOKEN")))
