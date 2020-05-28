@@ -3,6 +3,7 @@ from discord.ext import commands
 import random
 from const import responses
 from src import recipe as rc
+from src import shakespears as sh
 import os
 
 client = commands.Bot(command_prefix='--')
@@ -47,7 +48,7 @@ async def oobhai(ctx,no:int):
 async def recipe(ctx):
     await ctx.send(rc.recipeofday(str(os.environ.get('FOOD'))))
 
-
+## CLEAR
 @client.command(help ="Clears x number of messages",description="Clears x number of messages")
 async def clear(ctx,amount = 5):
     if amount<=5:
@@ -55,7 +56,10 @@ async def clear(ctx,amount = 5):
     else:
         await ctx.send("Clear limit is 5")
 
-
+##CLEAR
+@client.command(help="Return shakespears translation",description="Return shakespears translation")
+async def shakespears(ctx,*,query):
+    await ctx.send(sh.shake(query))
 
 
 client.run(str(os.environ.get("TOKEN")))
