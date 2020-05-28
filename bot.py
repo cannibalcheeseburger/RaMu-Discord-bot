@@ -4,7 +4,7 @@ import random
 import creds
 from const import responses
 from src import recipe as rc
-
+import os
 
 client = commands.Bot(command_prefix='--')
 
@@ -46,7 +46,7 @@ async def oobhai(ctx,no:int):
 ## RECIPE
 @client.command(help="Returns recipe of the day",description="Returns recipe of the day")
 async def recipe(ctx):
-    await ctx.send(rc.recipeofday(creds.FOOD))
+    await ctx.send(rc.recipeofday(os.environ.get('FOOD')))
 
 
 @client.command(help ="Clears x number of messages",description="Clears x number of messages")
@@ -59,5 +59,5 @@ async def clear(ctx,amount = 5):
 
 
 
-client.run(creds.TOKEN)
+client.run(str(os.environ.get("TOKEN")))
 
