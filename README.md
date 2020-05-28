@@ -71,9 +71,14 @@ Example of --help:
   --help   Shows this message
   --oobhai Returns maro mujhe maro x number of times
   --ping   Returns Ping
-
+  --recipe Returns recipe of the day
 Type --help command for more info on a command.
 You can also type --help category for more info on a category.
  ```
 
  ![Screenshot](./img/screen.png)
+
+
+ ## APIs
+
+  - [Food API](https://rapidapi.com/spoonacular/api/recipe-food-nutrition) : Used to retrieve recipe of the day.
