@@ -1,2 +1,0 @@
-TOKEN = "NzE1MjA0NDU3NzU0Nzg3OTUy.Xs6jNg.y0LeoyeuH03a6AGcofMP6mixyv0"
-FOOD =  "824bc0944dmsha1058bd1b0cc53ap1e9c21jsnb8d7f51fef9e"
