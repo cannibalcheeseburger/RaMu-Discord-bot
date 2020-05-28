@@ -11,7 +11,7 @@ client = commands.Bot(command_prefix='--')
 # EVENTS
 @client.event
 async def on_ready():
-    await client.change_presence(status= discord.Status.online,activity=discord.Game('RaMu bhaiya Uth Gaye'))
+    await client.change_presence(status= discord.Status.online,activity=discord.Game('Wid UR Feelings ;_;'))
     print('RaMu Bhaiya ki Jai.')
 
 @client.event
