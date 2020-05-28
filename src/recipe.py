@@ -7,7 +7,7 @@ clean = re.compile('<.*?>')
 
 def recipeofday(token):
     today_date = datetime.date.today()
-    reci = open('reci.txt','r+')
+    reci = open('./src/reci.txt','r+')
 
 
     text = reci.read()

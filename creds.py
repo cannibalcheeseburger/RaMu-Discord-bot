@@ -1,0 +1,2 @@
+TOKEN = "NzE1MjA0NDU3NzU0Nzg3OTUy.Xs-CBw.hdvbkZ9FJTXfPJs6eLhBYSLHi1c"
+FOOD =  "824bc0944dmsha1058bd1b0cc53ap1e9c21jsnb8d7f51fef9e"

@@ -3,7 +3,7 @@ from discord.ext import commands
 import random
 import creds
 from const import responses
-import src
+from src import recipe as rc
 
 
 client = commands.Bot(command_prefix='--')
@@ -46,7 +46,7 @@ async def oobhai(ctx,no:int):
 ## RECIPE
 @client.command(help="Returns recipe of the day",description="Returns recipe of the day")
 async def recipe(ctx):
-    await ctx.send(src.recipe.recipeofday(creds.FOOD))
+    await ctx.send(rc.recipeofday(creds.FOOD))
 
 
 @client.command(help ="Clears x number of messages",description="Clears x number of messages")
