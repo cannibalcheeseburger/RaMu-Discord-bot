@@ -43,19 +43,14 @@ python -m pip install -r requirements.txt
 python bot.py
 ```
 
-__Note__: For obvious reasons TOKEN for bot saved in separate file has not been uploaded. So bot won't work on your machine . 
+__Note__: For obvious reasons TOKEN for bot is saved in environment variable. So bot won't work on your machine . 
 
-If you just want it to make your own bot, then replace `creds.TOKEN` in:
+If you just want it to make your own bot, then replace `str(os.environ.get("TOKEN"))` in:
 ```python
-client.run(creds.TOKEN)
+client.run(str(os.environ.get("TOKEN")))
 ```
-at the end of file `bot.py`.
+at the end of file `bot.py` with your own TOKEN.
 
-And remove the line:
-
-```python 
-import creds
-```
 
 ## Usage 
 
@@ -68,10 +63,13 @@ Example of --help:
  ​No Category:
   --8ball Return a response to the question
   --clear  Clears x number of messages
+  --fortune     Fortune Cookie
   --help   Shows this message
   --oobhai Returns maro mujhe maro x number of times
   --ping   Returns Ping
   --recipe Returns recipe of the day
+  --shakespears Return shakespears translation
+
 Type --help command for more info on a command.
 You can also type --help category for more info on a category.
  ```
@@ -82,3 +80,5 @@ You can also type --help category for more info on a category.
  ## APIs
 
   - [Food API](https://rapidapi.com/spoonacular/api/recipe-food-nutrition) : Used to retrieve recipe of the day.
+  - [Shakespeare API](https://rapidapi.com/orthosie/api/shakespeare-translator) : Used to translate english to shakespeare style old english
+  - [Fortune Cookie API](http://yerkee.com/api) : Retrieves a fortune cookie 
