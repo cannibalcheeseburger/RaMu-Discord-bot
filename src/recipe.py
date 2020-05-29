@@ -37,7 +37,7 @@ def recipeofday(token):
             title = item['title']
             count = 1
             for ing in item['extendedIngredients']:
-                ingre = ingre + str(count)+'. '+ing['name']+'\n'+ing['original']+'\n'
+                ingre = ingre + str(count)+'. '+ing['original']+'\n'
                 count = count +1
             inst = re.sub(clean,'',item['instructions'])
      
