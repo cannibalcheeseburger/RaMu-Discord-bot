@@ -63,8 +63,9 @@ Example of --help:
  ​No Category:
   --8ball Return a response to the question
   --clear  Clears x number of messages
-  --fortune     Fortune Cookie
+  --fortune Fortune Cookie
   --help   Shows this message
+  --movie  Movie Torrent Finder
   --oobhai Returns maro mujhe maro x number of times
   --ping   Returns Ping
   --recipe Returns recipe of the day

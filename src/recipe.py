@@ -42,7 +42,7 @@ def recipeofday(token):
             inst = re.sub(clean,'',item['instructions'])
      
         #add recipe to text
-        text = str(today_date).strip() + """\nRECIPE OF THE DAY\n""" + title+'\n\nINGREDIENTS\n'+ingre+"\n\nINSTRUCTIONS\n"+inst
+        text = str(today_date).strip() + """\nRECIPE OF THE DAY:\n""" + title+'\n\nINGREDIENTS:\n'+ingre+"\n\nINSTRUCTIONS:\n"+inst
         
         #replace text to file
         reci.writelines(text)

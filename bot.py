@@ -5,6 +5,7 @@ from const import responses
 from src import recipe as rc
 from src import shakespears as sh
 from src import fortune as ft
+from src import movie as mv
 import os
 
 client = commands.Bot(command_prefix='--')
@@ -67,6 +68,11 @@ async def shakespears(ctx,*,query):
 async def fortune(ctx):
     await ctx.send(ft.fortune())
 
+@client.command(help = "Movie Torrent Finder",description = "Movie Torrent Finder")
+async def movie(ctx,*,name):
+    title , year , plot = mv.movie(name)
+    await ctx.send("Title:"+title+"\nYear:"+year+'\nPlot: '+plot+"\nLink:")
+    await ctx.send('https://yst.am/movie/'+title.replace(" ","-").lower()+"-"+year)
 
 client.run(str(os.environ.get("TOKEN")))
 
