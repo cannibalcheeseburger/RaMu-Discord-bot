@@ -68,11 +68,13 @@ async def shakespears(ctx,*,query):
 async def fortune(ctx):
     await ctx.send(ft.fortune())
 
-@client.command(help = "Movie Torrent Finder",description = "Movie Torrent Finder")
+@client.command(help = "Movie/Series Torrent Finder",description = "Movie/Series Torrent Finder")
 async def movie(ctx,*,name):
-    title , year , plot = mv.movie(name)
+    title , year , plot, ty = mv.movie(name)
     await ctx.send("Title:"+title+"\nYear:"+year+'\nPlot: '+plot+"\nLink:")
-    await ctx.send('https://yst.am/movie/'+title.replace(" ","-").lower()+"-"+year)
-
+    if not ty:
+        await ctx.send('https://yst.am/movie/'+title.replace(" ","-").lower()+"-"+year)
+    else:
+        await ctx.send('https://yifytorrent.cc/series/'+title.replace(" ","-").lower())
 client.run(str(os.environ.get("TOKEN")))
 

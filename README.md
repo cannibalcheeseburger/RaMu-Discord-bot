@@ -65,7 +65,7 @@ Example of --help:
   --clear  Clears x number of messages
   --fortune Fortune Cookie
   --help   Shows this message
-  --movie  Movie Torrent Finder
+  --movie  Movie/Series Torrent Finder
   --oobhai Returns maro mujhe maro x number of times
   --ping   Returns Ping
   --recipe Returns recipe of the day

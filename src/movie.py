@@ -7,4 +7,7 @@ def movie(name):
     title = str(el.get('title'))
     year = str(el.get('year'))
     plot = str(el.get('plot')[0])
-    return(title,year,plot)
+    ty = False
+    if str(el.get('kind')) == 'tv series':
+        ty = True
+    return(title,year,plot,ty)
