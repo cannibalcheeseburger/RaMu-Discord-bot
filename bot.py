@@ -75,6 +75,6 @@ async def movie(ctx,*,name):
     if not ty:
         await ctx.send('https://yst.am/movie/'+title.replace(" ","-").lower()+"-"+year)
     else:
-        await ctx.send('https://yifytorrent.cc/series/'+title.replace(" ","-").lower())
+        await ctx.send('https://eztvtorrent.co/series/'+title.replace(" ","-").lower())
 client.run(str(os.environ.get("TOKEN")))
 
